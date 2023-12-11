@@ -2,6 +2,9 @@
     main {
         top: 8.4375vh;
     }
+    .grid-blocks-contain div br {
+        display: none;
+    }
     h5 {
         font-weight: 200;
         text-align: center;
@@ -150,7 +153,6 @@
         font-size: 50px;
         text-align: center;
         z-index: 30000;
-        line-height: 0.8em;
         text-transform: none;
     }
     .class_5:hover {
@@ -496,15 +498,15 @@
         z-index: 10000;
     }
     .logo-1 {
-        width: 12vh;
+        width: 12vw;
         height: auto;  
     }
     .social-youtube {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 14vh;
-        height: 14vh;
+        width: 14vw;
+        height: 14vw;
         border-radius: 50%;
         background: linear-gradient(to bottom, #555 33%, #cc3333, #ff9218);
         background-size: 100% 300%;
@@ -519,8 +521,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 14vh;
-        height: 14vh;
+        width: 14vw;
+        height: 14vw;
         border-radius: 50%;
         background: linear-gradient(to bottom, #555 33%, #f8173e, #1dacd6);
         background-size: 100% 300%;
@@ -529,7 +531,7 @@
         transition: all 0.7s cubic-bezier(0.6, -0.2, 0.4, 1.2)
     }
     .logo-2 {
-        width: 10vh;
+        width: 10vw;
         height: auto;
     }
     .social-vk:hover {
@@ -539,8 +541,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 14vh;
-        height: 14vh;
+        width: 14vw;
+        height: 14vw;
         border-radius: 50%;
         background: linear-gradient(to bottom, #555 33%, #00cccc, #7cfc00);
         background-size: 100% 300%;
@@ -549,7 +551,7 @@
         transition: all 0.7s cubic-bezier(0.6, -0.2, 0.4, 1.2)
     }
     .logo-3 {
-        width: 12vh;
+        width: 12vw;
         height: auto;
     }
     .social-telegram:hover {
@@ -730,7 +732,6 @@
         font-family: 'Skranji', cursive;
         font-size: 2.75vh;
         text-align: center;
-        line-height: 0.8em;
         text-transform: none;
     }
     .class_5:hover {
@@ -916,8 +917,6 @@
         align-items: center;
         width: 40vw;
         height: 7vw;
-        margin-top: 5vh;
-        margin-left: 0vw;
         background-color: rgba(255, 255, 255, 0.4);
         border-radius: 1.5rem;
         backdrop-filter: blur(10px);
@@ -928,9 +927,10 @@
     }
     .card-text {
         font-size: 1rem;
+        margin: 0;
     }
     .card-link {
-        margin-top: -1rem;
+        margin-top: -1.5rem;
         display: block;
         width: 50%;
         margin: auto;
@@ -1007,7 +1007,7 @@
     }
     .grid-blocks-wrap {
         height: 80vh;
-        width: 100vw;
+        width: 80vw;
         z-index: 90;
         background-color: #101020;
         display: flex;
@@ -1015,8 +1015,8 @@
         align-items: center;
     }
     .grid-blocks-contain {
-        height: 95%;
-        width: 78%;
+        height: 75vh;
+        width: 75vw;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(3, 1fr);
@@ -1034,6 +1034,10 @@
         transition: 0.75s cubic-bezier(0.725, 0.510, 0.455, 1);
         padding: auto;
         text-align: center;
+        overflow-wrap: break-word;
+    }
+    .grid-blocks-contain div br {
+        display: block;
     }
     .grid-blocks-contain div:hover {
         background-color: crimson;
@@ -1146,7 +1150,7 @@
         justify-content: center;
         align-items: center;
         text-align: center;
-        width: 20vw;
+        width: 25vw;
         height: 30vw;
         background: linear-gradient(to right, #403050 50%, #101040 50%);
         box-shadow: 0px 0px 10px black;
@@ -1161,7 +1165,7 @@
         font-weight: bold;
         font-family: Arial;
         color: blue;
-        margin-left: 4vw;
+        margin-left: 10vw;
         margin-top: 0vw;
         opacity: 0.05;
         transition: all 0.7s cubic-bezier(0.785, 0.135, 0.15, 0.86);
@@ -1171,28 +1175,30 @@
     }
     .cards-2:hover > div:hover > div:first-child {
         opacity: 1;
-        margin-top: -12vw;
+        margin-top: -20vw;
     }
     .cards-2:hover > div:hover > div:last-child {
         opacity: 1;
     }
     .card-title2 {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
         font-weight: bold;
         font-family: 'Trebuchet MS';
         z-index: 10000;
         color: white;
-        margin-top: -1rem;
     }
     .card-text2 {
+        font-size: 0.75rem;
         color: white;
-        margin-bottom: 2.75rem;
+        margin-bottom: 1rem;
+        margin-top: -0.5rem;
     } 
     .card-link {
         background: white;
         color: black;
         text-decoration: none;
-        padding: 0.75rem;
+        padding: 0.25rem;
+        white-space: nowrap;
     }
     h5 {
         font-weight: 200;
